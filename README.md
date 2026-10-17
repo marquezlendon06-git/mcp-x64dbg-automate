@@ -73,25 +73,6 @@ x64dbg / x32dbg (VM2)
 Malware process under analysis
 ```
 
-### MCP Tools Exposed
-
-| Tool | Category | Description |
-|---|---|---|
-| `attach_session(pid)` | Session | Attach to a running debugger session by PID |
-| `get_reg(reg)` | Registers | Read a register or subregister value |
-| `eval_sync(expr)` | Registers | Evaluate an expression (e.g. `rsp+0x20`) |
-| `get_symbol_at(addr)` | Symbols | Resolve symbol name at an address |
-| `read_memory(addr, size)` | Memory | Read bytes from debuggee memory (endian-flipped) |
-| `read_aob(addr, size)` | Memory | Read memory as Array-of-Bytes signature |
-| `read_str_from_memory(addr, size, enc)` | Memory | Read and decode memory as text |
-| `virt_query(addr)` | Memory | Query virtual memory page info |
-| `memmap()` | Memory | Get full memory map of the debugged process |
-| `disassemble_at(addr)` | Disasm | Disassemble single instruction |
-| `disassemble_multi_line(addr, n)` | Disasm | Disassemble N consecutive instructions |
-| `set_comment_at(addr, text)` | Annotations | Set a comment at an address |
-| `set_label_at(addr, text)` | Annotations | Set a label at an address |
-| `cmd_sync(cmd)` | Commands | Execute any x64dbg command synchronously |
-
 ---
 
 ## Installation
